@@ -21,9 +21,14 @@
 
     this.one("unveil", function() {
       var source = this.getAttribute(attrib);
+      var is_img = ($(this).prop("tagName") === "IMG")
       source = source || this.getAttribute("data-src");
       if (source) {
-        this.setAttribute("src", source);
+        if (is_img) {
+          this.setAttribute("src", source);
+        } else {
+          $(this).css("background-image","url(" + source + ")")
+        };
         if (typeof callback === "function") callback.call(this);
       }
     });
