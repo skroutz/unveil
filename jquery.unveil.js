@@ -20,14 +20,17 @@
         loaded;
 
     this.one("unveil", function() {
-      var source = this.getAttribute(attrib);
-      var is_img = ($(this).prop("tagName") === "IMG")
+      var source = this.getAttribute(attrib),
+          $e = $(this),
+          is_img = ($(this).prop("tagName") === "IMG");
+
       source = source || this.getAttribute("data-src");
+
       if (source) {
         if (is_img) {
           this.setAttribute("src", source);
         } else {
-          $(this).css("background-image","url(" + source + ")")
+          $(this).css('background-image', 'url(' + source + ')')
         };
         if (typeof callback === "function") callback.call(this);
       }
