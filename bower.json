@@ -1,5 +1,6 @@
 {
   "name": "skroutz-unveil",
   "version": "1.4.0",
-  "main": ["jquery.unveil.js"]
+  "main": ["jquery.unveil.js"],
+  "ignore": ["README.md","index.html"]
 }
