@@ -1,0 +1,19 @@
+{
+  "name": "@skroutz/unveil",
+  "version": "1.4.0",
+  "description": "",
+  "main": "jquery.unveil.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skroutz/unveil.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skroutz/unveil/issues"
+  },
+  "homepage": "https://github.com/skroutz/unveil#readme"
+}
